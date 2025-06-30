@@ -1,0 +1,377 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #292929;
+    font-size: 16px;
+    line-height: 140%;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 64px 120px;
+    background-image: url(images/header-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__title {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 48px;
+    line-height: 100%;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 500ms;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 64px 120px;
+    background: #E8EFF9;
+
+}
+
+.menu:target {
+    transform: translateX(-0%);
+
+}
+
+.menu__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.nav__link {
+    color: #292929;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.main {
+    padding: 120px;
+    background-color: white;
+
+}
+
+.recommended {
+    margin-bottom: 120px;
+
+}
+
+.recommended__title {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1.5px;
+
+}
+
+.recommended__products {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+.product {
+    flex-basis: 324px;
+
+}
+
+.product__photo {
+    width: 100%;
+    margin-bottom: 32px;
+
+}
+
+.product__title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 140%;
+
+}
+
+.product__category {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+}
+
+.product__price {
+    margin: 0;
+    font-weight: bold;
+
+}
+
+.categories {
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
+}
+
+.categories__title {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1.5px;
+
+}
+
+.category {
+    margin-bottom: 64px;
+
+}
+
+.category__photos {
+    display: flex;
+    gap: 3%;
+    margin-bottom: 16px;
+
+}
+
+.category__title {
+    margin: 0;
+
+}
+
+.photo-wide {
+    width: 65%;
+
+}
+
+.photo-square {
+    width: 32%;
+
+}
+
+.how-to-buy {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+
+}
+
+.how-to-buy__title {
+    flex-basis: 50%;
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: bold;
+    letter-spacing: -1.5px;
+
+}
+
+.how-to-buy__content {
+    flex-basis: 50%;
+
+}
+
+.how-to-buy__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: bold;
+
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    height: 460px;
+    background-image: url(images/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@media (max-width: 420px) {
+    .header {
+        padding: 24px 12px;
+        height: auto;
+        background-position: center;
+    }
+
+    .header__top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__top img {
+        max-height: 28px;
+        width: auto;
+    }
+
+    .header__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 32px;
+    }
+
+    .header__bottom img {
+        max-width: 48px;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .header__title {
+        font-size: 22px;
+        line-height: 130%;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .header__top img[alt="Bose logo"] {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .menu {
+        padding: 32px 20px;
+    }
+
+    .menu__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+
+    .menu__top img[alt="Bose logo"] {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .menu__top img[alt="Close"] {
+        max-width: 20px;
+        height: auto;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .nav__link {
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #292929;
+    }
+
+    .main {
+        padding: 40px 20px;
+    }
+
+    .recommended__title,
+    .categories__title,
+    .how-to-buy__title {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .recommended__products {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .product {
+        flex-basis: 100%;
+    }
+
+    .categories {
+        margin-bottom: 80px;
+        padding: 0 10px;
+    }
+
+    .category__photos {
+
+        gap: 16px;
+    }
+
+    .photo-wide,
+    .photo-square {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .how-to-buy {
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 10px;
+    }
+
+    .how-to-buy__title,
+    .how-to-buy__content {
+        flex-basis: 100%;
+    }
+
+    .footer {
+        height: 300px;
+        background-position: center;
+    }
+}
